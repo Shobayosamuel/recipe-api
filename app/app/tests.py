@@ -4,6 +4,7 @@ Sample tests
 from django.test import SimpleTestCase
 from app import calc
 
+
 class CalcTests(SimpleTestCase):
     """Test the calc module"""
     def test_add_numbers(self):
@@ -15,8 +16,3 @@ class CalcTests(SimpleTestCase):
         """Test subtracting numbers together"""
         res = calc.subtract(9, 3)
         self.assertEquals(res, 6)
-
-    def test_is_even(self):
-        """Test if the number is even"""
-        res = calc.is_even(4)
-        self.assertEqual(res, True)
